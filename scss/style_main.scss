@@ -1,0 +1,102 @@
+// Base style
+@import './base/reset';
+@import './base/vars';
+@import './base/base';
+
+body {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+
+	font-family: $font-main;
+	font-weight: 400;
+	color: $white;
+	font-size: 18px;
+}
+
+// 1 Блок
+.wrapper__parallax {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	background: #200000;
+	z-index: 0;
+
+	img {
+		position: absolute;
+		width: 100%;
+		pointer-events: none;
+		animation: parallax linear;
+		animation-timeline: scroll();
+	}
+
+	h1 {
+		font-size: 160px;
+		position: fixed;
+		margin: 12% 0 0 15%;
+		font-weight: 400;
+	}
+
+	h2 {
+		font-size: 60px;
+		position: fixed;
+		margin: 24% 0 0 15%;
+		font-weight: 200;
+	}
+
+	button {
+		position: fixed;
+		margin: 32% 0 0 15%;
+		width: 300px;
+		height: 50px;
+	}
+}
+
+.fon {
+	--parallax-speed: -3;
+}
+.byri_fon {
+	--parallax-speed: 0;
+}
+.byri_gif {
+	--parallax-speed: -1;
+}
+.dune {
+	position: relative !important;
+	--parallax-speed: 1;
+}
+.dune_z {
+	bottom: 0;
+}
+.people {
+	--parallax-speed: 1.1;
+}
+.hero {
+	--parallax-speed: 1.5;
+}
+.ef {
+	--parallax-speed: 1;
+}
+
+.str {
+	width: 50px;
+	height: 50px;
+	bottom: 10%;
+}
+
+@keyframes parallax {
+	to {
+		transform: translateY(calc(var(--parallax-speed) * 200px));
+	}
+}
+
+// 2 Блок
+.location__content {
+	display: flex;
+	flex-flow: column;
+	background: linear-gradient(#200000, #6c1600);
+	padding: 5% 15%;
+	z-index: 1;
+}
