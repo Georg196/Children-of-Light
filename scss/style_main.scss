@@ -33,25 +33,33 @@ body {
 	}
 
 	h1 {
-		font-size: 160px;
+		font-size: 160px; // заменить переменными
 		position: fixed;
 		margin: 12% 0 0 15%;
 		font-weight: 400;
+		--parallax-speed: -8;
 	}
 
 	h2 {
-		font-size: 60px;
+		font-size: 60px; // заменить переменными
 		position: fixed;
 		margin: 24% 0 0 15%;
 		font-weight: 200;
+		--parallax-speed: -6;
 	}
 
-	button {
+	button { 
 		position: fixed;
 		margin: 32% 0 0 15%;
-		width: 300px;
+		width: 300px; // заменить на шаблон
 		height: 50px;
+		--parallax-speed: -2;
 	}
+}
+
+.parallax {
+	animation: parallax linear;
+	animation-timeline: scroll();
 }
 
 .fon {
@@ -61,7 +69,7 @@ body {
 	--parallax-speed: 0;
 }
 .byri_gif {
-	--parallax-speed: -1;
+	--parallax-speed: -5;
 }
 .dune {
 	position: relative !important;
@@ -92,6 +100,7 @@ body {
 	}
 }
 
+
 // 2 Блок
 .location__content {
 	display: flex;
@@ -100,3 +109,4 @@ body {
 	padding: 5% 15%;
 	z-index: 1;
 }
+

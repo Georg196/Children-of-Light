@@ -5,6 +5,8 @@
 //   font-style: normal;
 // }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 // Fonts
 $font-main: "Roboto Mono", monospace;
 $font-accent: '';
@@ -20,5 +22,5 @@ $title-main: clamp(24px, 2vw, 56px);
 $title: clamp(18px, 2vw, 24px);
 $text: clamp(14px, 2vw, 18px);
 
-// line-height
+// Line-height
 $line: 180%;

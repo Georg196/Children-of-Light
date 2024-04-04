@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -41,18 +42,26 @@ body {
   position: fixed;
   margin: 12% 0 0 15%;
   font-weight: 400;
+  --parallax-speed: -8;
 }
 .wrapper__parallax h2 {
   font-size: 60px;
   position: fixed;
   margin: 24% 0 0 15%;
   font-weight: 200;
+  --parallax-speed: -6;
 }
 .wrapper__parallax button {
   position: fixed;
   margin: 32% 0 0 15%;
   width: 300px;
   height: 50px;
+  --parallax-speed: -2;
+}
+
+.parallax {
+  animation: parallax linear;
+  animation-timeline: scroll();
 }
 
 .fon {
@@ -64,7 +73,7 @@ body {
 }
 
 .byri_gif {
-  --parallax-speed: -1;
+  --parallax-speed: -5;
 }
 
 .dune {
