@@ -54,28 +54,23 @@ body {
 .wrapper__parallax h1 {
   font-size: 160px;
   position: fixed;
-  margin: 12% 0 0 15%;
+  margin: 8% 0 0 10%;
   font-weight: 400;
-  --parallax-speed: -8;
+  --parallax-speed: 1;
 }
 .wrapper__parallax h2 {
   font-size: 60px;
   position: fixed;
-  margin: 24% 0 0 15%;
+  margin: 28% 0 0 10%;
   font-weight: 200;
-  --parallax-speed: -6;
+  --parallax-speed: 1;
 }
 .wrapper__parallax button {
   position: fixed;
-  margin: 32% 0 0 15%;
+  margin: 38% 0 0 10%;
   width: 300px;
   height: 50px;
-  --parallax-speed: -2;
-}
-
-.parallax {
-  animation: parallax linear;
-  animation-timeline: scroll();
+  --parallax-speed: 1.5;
 }
 
 .fon {
@@ -83,16 +78,16 @@ body {
 }
 
 .byri_fon {
-  --parallax-speed: 0;
+  --parallax-speed: -1;
 }
 
 .byri_gif {
-  --parallax-speed: -5;
+  --parallax-speed: 1;
 }
 
 .dune {
   position: relative !important;
-  --parallax-speed: 1;
+  --parallax-speed: 0.5;
 }
 
 .dune_z {
@@ -100,21 +95,15 @@ body {
 }
 
 .people {
-  --parallax-speed: 1.1;
+  --parallax-speed: 0.8;
 }
 
 .hero {
-  --parallax-speed: 1.5;
-}
-
-.ef {
   --parallax-speed: 1;
 }
 
-.str {
-  width: 50px;
-  height: 50px;
-  bottom: 10%;
+.ef {
+  --parallax-speed: 0.5;
 }
 
 @keyframes parallax {
@@ -122,18 +111,27 @@ body {
     transform: translateY(calc(var(--parallax-speed) * 200px));
   }
 }
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  background: linear-gradient(#200000, #6c1600);
+  z-index: 1;
+}
+
 .location {
+  width: 1110px;
   display: flex;
   flex-flow: column;
-  background: linear-gradient(#200000, #6c1600);
-  padding: 5%;
-  z-index: 1;
 }
 
 .location__content {
   display: flex;
   align-items: center;
   margin-left: 10px;
+  margin-bottom: 50px;
 }
 .location__content img {
   width: 500px;
@@ -146,6 +144,34 @@ body {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(12deg);
+    transform: rotate(-25deg);
   }
+}
+.location__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.location__img img {
+  width: 350px;
+  height: 250px;
+  border-radius: 25px;
+}
+
+.heroes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#4a0d00, #ad1a1b);
+  background-image: url(/assets/materials/heroes_fon_1.png);
+  background-size: cover;
+  width: 100%;
+  height: 1020px;
+  z-index: 2;
+}
+
+.heroes__content {
+  width: 1110px;
 }
