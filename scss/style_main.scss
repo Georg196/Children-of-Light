@@ -101,12 +101,33 @@ body {
 }
 
 
-// 2 Блок
-.location__content {
+// 2 Блок — локации
+.location {
 	display: flex;
 	flex-flow: column;
 	background: linear-gradient(#200000, #6c1600);
-	padding: 5% 15%;
+	padding: 5%;
 	z-index: 1;
 }
 
+.location__content {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    img {
+        width: 500px;
+        animation: rotateF linear;
+		animation-timeline: scroll();
+    }
+}
+
+@keyframes rotateF {
+	0% {
+		transform: rotate(0deg);
+	}
+
+    100% {
+        transform: rotate(12deg);
+    }
+}
