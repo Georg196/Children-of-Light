@@ -3,51 +3,72 @@ body::-webkit-scrollbar {
 	width: 12px;
 }
 
-body::-webkit-scrollbar-track { // скроллбар
+body::-webkit-scrollbar-track {
+	// скроллбар
 	background-color: transparent;
 	background-color: #333;
 }
 
-body::-webkit-scrollbar-thumb { // маркер
+body::-webkit-scrollbar-thumb {
+	// маркер
 	border-radius: 25px;
 	background-color: #f5f5f5;
 }
 
-
 // общие настройки
+h2 {
+	// font-family: $font-main;
+	font-weight: normal;
+	font-size: 40px; // заменить переменными
+	color: #f5f5f5;
+}
+
 p {
 	font-size: $text;
 	line-height: $line;
 }
 
-// button {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	width: 300px;
-// 	min-height: 60px;
-// 	margin-top: 2%;
-// 	border-radius: 360px;
-// 	background: #ffb92f;
-// 	margin-bottom: 10%;
-// 	border: 2px solid #ffb92f;
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+	min-height: 60px;
+	margin-top: 2%;
+	border-radius: 360px;
+	background: #ad1a1b;
+	margin-bottom: 10%;
+	border: 2px solid #ad1a1b;
+	box-shadow: 0px 0px 40px 4px rgba(51, 51, 51, 0.2);
 
-// 	a {
-// 		display: flex;
-// 		align-items: center;
-// 		justify-content: center;
-// 		width: 300px;
-// 		height: 60px;
-// 		font-family: $font-main;
-// 		font-weight: 700;
-// 		color: $white;
-// 		font-size: $text;
-//         border-radius: 360px;
-// 	}
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 300px;
+		height: 60px;
+		font-family: $font-main;
+		font-weight: 100;
+		color: $white;
+		font-size: $text;
+		border-radius: 360px;
+		text-decoration: none;
+	}
 
-// 	&:hover {
-//         color: $white;
-// 		background: #ec9e00;
-// 		border: 2px solid #ec9e00;
-// 	}
-// }
+	&:hover {
+		color: $white;
+		background: #881010;
+		border: 2px solid #881010;
+	}
+}
+
+.vk {
+	background-color: #0077ff;
+	border: 2px solid #0077ff;
+
+	&:hover {
+		color: $white;
+		background: #0062d3;
+		border: 2px solid #0062d3; 
+	}
+}

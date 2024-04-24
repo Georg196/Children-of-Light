@@ -5,10 +5,16 @@
 //   font-style: normal;
 // }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+@font-face {
+    font-family: 'Strong';
+    src: url(../../assets/fonts/Strong-Regular.ttf);
+}
 
 // Fonts
-$font-main: "Roboto Mono", monospace;
+$font-main: 'Strong';
 $font-accent: '';
 $font-secondary: '';
 
@@ -24,3 +30,6 @@ $text: clamp(14px, 2vw, 18px);
 
 // Line-height
 $line: 180%;
+
+
+

@@ -15,7 +15,7 @@ body {
 	font-size: 18px;
 }
 
-// 1 Блок
+// 1 БЛОК
 .wrapper__parallax {
 	width: 100%;
 	height: 100%;
@@ -33,35 +33,40 @@ body {
 	}
 
 	h1 {
-		font-size: 160px; // заменить переменными
+		font-size: 12em; // заменить переменными
 		position: fixed;
-		margin: 8% 0 0 10%;
-		font-weight: 400;
-		--parallax-speed: 1;
+		margin: 10% 25%;
+		width: 1100px;
+		// --parallax-speed: 1;
 	}
 
 	h2 {
-		font-size: 60px; // заменить переменными
+		font-size: 4rem; // заменить переменными
 		position: fixed;
-		margin: 28% 0 0 10%;
-		font-weight: 200;
-		--parallax-speed: 1;
+		margin: 25% 25%;
+		width: 1100px;
+		// --parallax-speed: 1;
 	}
+}
 
-	button {
-		position: fixed;
-		margin: 38% 0 0 10%;
-		width: 300px; // заменить на шаблон
-		height: 50px;
-		--parallax-speed: 1.5;
-	}
+.buttons {
+	position: fixed;
+	margin: 32% 25%;
+	display: flex;
+    gap: 30px;
+}
+
+.forest {
+	width: 100%;
+	position: fixed;
+	bottom: 48%;
 }
 
 .fon {
-	--parallax-speed: -3;
+	--parallax-speed: 8;
 }
 .byri_fon {
-	--parallax-speed: -1;
+	--parallax-speed: -2;
 }
 .byri_gif {
 	--parallax-speed: 1;
@@ -74,13 +79,14 @@ body {
 	bottom: 0;
 }
 .people {
-	--parallax-speed: 0.8;
+	--parallax-speed: 2;
 }
 .hero {
-	--parallax-speed: 1;
+	--parallax-speed: 3;
 }
 .ef {
-	--parallax-speed: 0.5;
+    opacity: 0.6;
+	--parallax-speed: 2;
 }
 
 @keyframes parallax {
@@ -92,8 +98,8 @@ body {
 .arrow {
 	position: absolute;
 	display: flex;
-    align-items: flex-start;;
-    justify-content: center;
+	align-items: flex-start;
+	justify-content: center;
 	width: 100%;
 	height: 200px;
 	bottom: 0;
@@ -102,7 +108,7 @@ body {
 	img {
 		width: 40px;
 		animation: slide1 1s ease-in-out infinite;
-		animation-direction: alternate-reverse;;
+		animation-direction: alternate-reverse;
 	}
 }
 
@@ -116,7 +122,7 @@ body {
 	}
 }
 
-// 2 Блок — локации
+// 2 БЛОК — локации
 .location {
 	width: 100%;
 	padding: 80px 0;
@@ -131,11 +137,10 @@ body {
 	width: 1100px;
 	display: flex;
 	align-items: center;
-	margin-left: 10px;
 	margin-bottom: 50px;
 
 	img {
-		width: 450px;
+		width: 370px;
 		animation: rotateF linear;
 		animation-timeline: scroll();
 	}
@@ -166,42 +171,115 @@ body {
 	}
 }
 
-.transition {
+// 3 БЛОК — герои
+.heroes {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	background: url(/assets/materials/sky.png);
+	background-size: cover;
 	width: 100%;
-	margin: -60px 0;
-	background: linear-gradient(#681500, hsla(0, 0%, 100%, 0));
+	height: 100vh; // временно
+	margin: -5% 0;
 	z-index: 2;
 }
 
-.revers {
-    transform: rotate(180deg);
-    margin-top: -55px;
-}
-
-// 3 Блок — герои
-.heroes {
+.heroes__content {
+	width: 1100px;
+	padding: 300px 0 0 0;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	background: linear-gradient(25deg, #007382, #4fb3aa);
-	background-size: cover;
-	width: 100%;
-	height: 1020px;
-	z-index: 1;
+	margin-bottom: 80px;
+	gap: 80px;
+
+	img {
+		width: 200px;
+	}
 }
 
-.heroes__content {
-	width: 1110px;
+.heroes__img {
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 25px;
+	margin-bottom: 80px;
+
+	img {
+		border-radius: 360px;
+	}
 }
 
-// 4 Блок — автор
+.gerd {
+	width: 200px;
+	height: 200px;
+}
+
+.sandal {
+	margin-top: 10px;
+	width: 120px;
+	height: 120px;
+}
+
+.elza {
+	width: 100px;
+	height: 100px;
+}
+
+.dictator {
+	margin-top: 40px;
+	width: 150px;
+	height: 150px;
+}
+
+// 4 БЛОК — автор
 
 .author {
 	width: 100%;
-	padding: 80px 0;
-	background: linear-gradient(#200000, #6c1600);
+	height: 700px;
+	padding: 150px 0;
+	background: #ad1a1b;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	z-index: 1;
 }
+
+.dune-fon {
+	position: absolute;
+	width: 100%;
+	background: #ad1a1b;
+	z-index: -1;
+}
+
+.author__content {
+	width: 1100px;
+	display: flex;
+	align-items: center;
+	gap: 80px;
+	margin-bottom: 50px;
+
+	img {
+		width: 370px;
+	}
+}
+
+a {
+	color: #fff;
+	text-decoration: underline #fff;
+}
+
+// 5 БЛОК — лагерь
+.camp {
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(-25deg, #007382, #4fb3aa);
+}
+
+// // 6 БЛОК — футер
+// .futter {
+// 	height: 100px;
+// 	width: 100%;
+// 	background: #200000;
+// 	z-index: 2;
+// }
