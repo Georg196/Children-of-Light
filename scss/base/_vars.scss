@@ -7,10 +7,9 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 @font-face {
-    font-family: 'Strong';
-    src: url(../../assets/fonts/Strong-Regular.ttf);
+	font-family: 'Strong';
+	src: url(./assets/fonts/Strong-Regular.ttf);
 }
 
 // Fonts
@@ -30,6 +29,3 @@ $text: clamp(14px, 2vw, 18px);
 
 // Line-height
 $line: 180%;
-
-
-

@@ -32,14 +32,14 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 300px;
+	width: 250px;
 	min-height: 60px;
 	margin-top: 2%;
 	border-radius: 360px;
 	background: #ad1a1b;
 	margin-bottom: 10%;
 	border: 2px solid #ad1a1b;
-	box-shadow: 0px 0px 40px 4px rgba(51, 51, 51, 0.2);
+	box-shadow: 0px 0px 40px 1px #ffffff33;
 
 	a {
 		display: flex;
@@ -71,4 +71,61 @@ button {
 		background: #0062d3;
 		border: 2px solid #0062d3; 
 	}
+}
+
+.tg {
+	background-color: #2AABEE;
+	border: 2px solid #2AABEE;
+
+	&:hover {
+		color: $white;
+		background: #1a87c2;
+		border: 2px solid #1a87c2; 
+	}
+}
+
+
+
+// Анимация иконки person:
+.box {
+	--border-angle: 0turn; // For animation.
+	--main-bg: conic-gradient(
+		from var(--border-angle),
+		#213,
+		#112 5%,
+		#112 60%,
+		#213 95%
+	);
+
+	border: solid 5px transparent;
+	border-radius: 2em;
+	--gradient-border: conic-gradient(
+		from var(--border-angle),
+		transparent 25%,
+		#00ffea,
+		#fd0303 99%,
+		transparent
+	);
+
+	background: var(--main-bg) padding-box, var(--gradient-border) border-box,
+		var(--main-bg) border-box;
+
+	background-position: center center;
+
+	animation: bg-spin 3s linear infinite;
+	@keyframes bg-spin {
+		to {
+			--border-angle: 1turn;
+		}
+	}
+
+	// &:hover {
+	// 	animation-play-state: paused;
+	// }
+}
+
+@property --border-angle {
+	syntax: '<angle>';
+	inherits: true;
+	initial-value: 0turn;
 }
