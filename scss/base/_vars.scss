@@ -22,10 +22,15 @@ $dark: #111;
 $white: #f5f5f5;
 
 // Font-size
-$big-title: clamp(44px, 2vw, 64px);
-$title-main: clamp(24px, 2vw, 56px);
+$big-title: clamp(180px, 8vw, 260px);
+$title-main: clamp(24px, 1vw, 56px);
 $title: clamp(18px, 2vw, 24px);
 $text: clamp(14px, 2vw, 18px);
 
 // Line-height
 $line: 180%;
+
+// формула расчета: 
+// 1350px / 100px
+// 1vw = 13.5px
+// 100px / 13.5px = 6.25

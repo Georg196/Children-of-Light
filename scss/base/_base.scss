@@ -45,12 +45,12 @@ button {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 300px;
-		height: 60px;
+		max-width: 300px;
+		max-height: 60px;
 		font-family: $font-main;
 		font-weight: 100;
 		color: $white;
-		font-size: $text;
+		font-size: clamp(14px, 2vw, 18px);
 		border-radius: 360px;
 		text-decoration: none;
 	}
