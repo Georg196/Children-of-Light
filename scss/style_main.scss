@@ -35,25 +35,31 @@ body {
 	h1 {
 		font-size: 12em; // заменить переменными
 		position: fixed;
-		margin: 10% 25%;
-		width: 1100px;
-		// --parallax-speed: 1;
+		margin: 10% 0 0 25%;
 	}
 
 	h2 {
 		font-size: 4rem; // заменить переменными
 		position: fixed;
-		margin: 25% 25%;
-		width: 1100px;
-		// --parallax-speed: 1;
+		margin: 25% 0 0 25%;
 	}
+
+    p {
+        width: 50%;
+		position: fixed;
+		margin: 40% 0 0 25%;
+        padding: 40px 0 40px 40px;
+        color: #333;
+        background-color: #ffffffd0;
+        border-radius: 25px;
+    }
 }
 
 .buttons {
 	position: fixed;
-	margin: 32% 25%;
+	margin: 32% 0 0 25%;
 	display: flex;
-    gap: 30px;
+	gap: 30px;
 }
 
 .forest {
@@ -85,7 +91,7 @@ body {
 	--parallax-speed: 3;
 }
 .ef {
-    opacity: 0.6;
+	opacity: 0.6;
 	--parallax-speed: 2;
 }
 
@@ -176,6 +182,7 @@ body {
 	display: flex;
 	flex-flow: column;
 	align-items: center;
+	background: radial-gradient(#007382, #4fb3aa);
 	background: url(./assets/materials/sky.png);
 	background-size: cover;
 	width: 100%;
@@ -275,6 +282,7 @@ a {
 	width: 100%;
 	background: linear-gradient(-25deg, #007382, #4fb3aa);
 }
+
 
 // // 6 БЛОК — футер
 // .futter {

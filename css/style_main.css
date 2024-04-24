@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Strong";
-  src: url(./assets/fonts/Strong-Regular.ttf);
+  src: url(../../assets/fonts/Strong-Regular.ttf);
 }
 body::-webkit-scrollbar {
   width: 12px;
@@ -148,19 +148,26 @@ body {
 .wrapper__parallax h1 {
   font-size: 12em;
   position: fixed;
-  margin: 10% 25%;
-  width: 1100px;
+  margin: 10% 0 0 25%;
 }
 .wrapper__parallax h2 {
   font-size: 4rem;
   position: fixed;
-  margin: 25% 25%;
-  width: 1100px;
+  margin: 25% 0 0 25%;
+}
+.wrapper__parallax p {
+  width: 50%;
+  position: fixed;
+  margin: 40% 0 0 25%;
+  padding: 40px 0 40px 40px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8156862745);
+  border-radius: 25px;
 }
 
 .buttons {
   position: fixed;
-  margin: 32% 25%;
+  margin: 32% 0 0 25%;
   display: flex;
   gap: 30px;
 }
@@ -282,6 +289,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
+  background: radial-gradient(#007382, #4fb3aa);
   background: url(./assets/materials/sky.png);
   background-size: cover;
   width: 100%;
